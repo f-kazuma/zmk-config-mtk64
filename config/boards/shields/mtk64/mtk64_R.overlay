@@ -4,6 +4,14 @@
     row-offset = <7>;
 };
 
+/ {
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+};
+
 /*
 &kscan0 {
     gpios
