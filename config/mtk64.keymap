@@ -8,6 +8,20 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
+  &trackball_listener {
+      // レイヤー3でスクロールモードを有効化
+      layer_3_scroller {
+          layers = <3>;
+          input-processors = <&zip_xy_to_scroll_mapper>;
+      };
+
+      // レイヤー7でスクロールモードを有効化
+      layer_7_scroller {
+          layers = <7>;
+          input-processors = <&zip_xy_to_scroll_mapper>;
+      };
+  };
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
