@@ -35,14 +35,14 @@
           // レイヤー3でトラックボールをスクロールモードに
           layer_3_scroller {
               layers = <3>;
-              input-processors = <&zip_xy_scaler 1 10
+              input-processors = <&zip_xy_scaler 1 14 &zip_y_invert
   &zip_xy_to_scroll_mapper>;
           };
 
           // レイヤー7でトラックボールをスクロールモードに
           layer_7_scroller {
               layers = <7>;
-              input-processors = <&zip_xy_scaler 1 10
+              input-processors = <&zip_xy_scaler 1 14 &zip_y_invert
   &zip_xy_to_scroll_mapper>;
           };
       };
