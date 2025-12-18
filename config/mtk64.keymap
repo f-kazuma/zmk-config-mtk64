@@ -37,7 +37,7 @@
     };
 };
 
-&trackball_listener {
+&trackball_listener: trackball_listener {
       // レイヤー3でトラックボールをスクロールモードに
       layer_3_scroller {
           layers = <3>;
