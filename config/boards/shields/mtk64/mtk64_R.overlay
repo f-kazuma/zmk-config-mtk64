@@ -38,8 +38,7 @@
             input-processors =
                 <&zip_xy_scaler 1 14
                  &zip_xy_to_scroll_mapper
-                    ZMK_SCROLL_INVERT_X
-                    ZMK_SCROLL_INVERT_Y>;
+                    (ZMK_SCROLL_INVERT_X | ZMK_SCROLL_INVERT_Y)>;
         };
 
         /* レイヤー7：スクロール（反転） */
@@ -48,8 +47,7 @@
             input-processors =
                 <&zip_xy_scaler 1 14
                  &zip_xy_to_scroll_mapper
-                    ZMK_SCROLL_INVERT_X
-                    ZMK_SCROLL_INVERT_Y>;
+                    (ZMK_SCROLL_INVERT_X | ZMK_SCROLL_INVERT_Y)>;
           };
       };
   };
