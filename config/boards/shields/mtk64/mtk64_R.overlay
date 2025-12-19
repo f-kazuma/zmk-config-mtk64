@@ -36,7 +36,7 @@
         layer_3_scroller {
             layers = <3>;
             input-processors =
-            <&zip_xy_scaler -1 -14
+            <&zip_xy_scaler (-1) (-14)
             &zip_xy_to_scroll_mapper>;
         };
 
@@ -44,7 +44,7 @@
         layer_7_scroller {
             layers = <7>;
             input-processors =
-            <&zip_xy_scaler -1 -14
+            <&zip_xy_scaler (-1) (-14)
              &zip_xy_to_scroll_mapper>;
           };
       };
